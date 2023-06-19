@@ -1,27 +1,3 @@
-.header ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgba(29, 138, 29, 0.89);
-}
-
-.header li {
-  float: right;
-}
-
-.header li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover*/
-.header li a:hover {
-  background-color: #111;
-}
 
 .banner img {
   display: block;
@@ -31,117 +7,10 @@
   height: auto;
 
 }
-
-.navbar ul {
-  
-  margin: 0;
-  overflow: hidden;
-  background-color:#EEEEEE;
-  
-}
-.navbar .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
- 
-}
-.navbar input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-  margin-right: 10px;
-}
-.navbar .search-container button:hover {
-  background: #ccc;
-
-}
-.navbar .search-container {
-  float: right;
-  padding: 6px 10px;
-}
-
-
-.navbar li {
-  display: inline-block;
-  list-style-type: none;
-
-  
-}
-
-.navbar li a {
-  display: block;
-  color: #131414;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  position:static;
-}
-.navbar{
-  text-align: center;
-  border-bottom:solid 2px #0e6d0e;
-  border-top:solid 2px #008000;
-}
-
-/* Change the link color to #111 (black) on hover*/
-.header li a:hover {
-  background-color: #111;
-}
-
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navbar li a:hover {
-  background-color: #f9f9f9;
-}
-
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color:rgba(255, 255, 255, 0.082);
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 .imgAcciuga img {
   width: 100%;
   margin: 0;
   padding: 0;
-
 }
 
 h1 {
@@ -157,12 +26,11 @@ p {
   max-width: 100%;
 }
 
-.col-4  {
-  display: flex;
-  position: -webkit-sticky;
+.col-4{
   position: sticky;
-  top: 70px;
-
+  top: 0;
+  width: auto;
+  height: 500px;
 }
 
 .footer {
@@ -179,4 +47,20 @@ p {
 .footer h6 {
   width: 50%;
   height: auto;
+}
+
+
+@media screen and (max-width: 500px) {
+.body{
+  padding-right: 0px ;
+}
+.col-4{
+  display: none;
+}
+.col-8{
+  text-align: center;
+  padding:0;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
